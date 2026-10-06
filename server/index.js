@@ -1,10 +1,12 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const path = require("path");
 const todoRoutes = require("./routes/todoRoutes");
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // Log every API request: method, url, status, time taken, and body for writes

@@ -1,4 +1,4 @@
-const API_URL = "/api/todos";
+const API_URL = "https://todo-app-backend-pn9e.onrender.com/api/todos";
 
 const request = async (url, options) => {
   const res = await fetch(url, options);
